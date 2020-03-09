@@ -78,6 +78,7 @@ public class AgreementServices {
         Delegator delegator = ctx.getDelegator();
         Locale locale = (Locale) context.get("locale");
         String errMsg = null;
+        paramMap.put("hrefString", hrefString);
         List<Map<String, Object>> commissions = new LinkedList<Map<String,Object>>();
 
         try {
